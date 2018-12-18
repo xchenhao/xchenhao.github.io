@@ -1,17 +1,15 @@
 ---
 layout: post
-title:  "Linux 三剑客"
+title:  "Linux 三剑客：grep/sed/awk"
 categories: Linux
 tags: grep sed awk linux
-author: HyG
+author: xchenhao
 ---
 
 * content
 {:toc}
 
 
-
-## Linux 三剑客
 
 ### grep
 - 格式：grep <参数> <匹配模式> <文件>
