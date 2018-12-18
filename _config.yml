@@ -7,7 +7,7 @@
 
 # Site settings
 title: 不可思议
-brief-intro: Where Am I?
+brief-intro: Where Am I
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://xchenhao.github.io" # the base hostname & protocol for your site
 
