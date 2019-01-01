@@ -2,7 +2,7 @@
 layout: post
 title:  "Linux 三剑客：grep/sed/awk"
 categories: Linux
-tags: grep sed awk linux
+tags: grep sed awk Linux
 author: xchenhao
 ---
 
@@ -222,6 +222,6 @@ http://www.runoob.com/linux/linux-comm-sed.html<br />
 http://www.runoob.com/linux/linux-comm-awk.html<br />
 https://www.cnblogs.com/xudong-bupt/p/3721210.html<br />
 
-### 记录
+### 编辑记录
 创建：12-16-2018 21:00 周日<br />
 编辑：12-22-2018 16:48 周六

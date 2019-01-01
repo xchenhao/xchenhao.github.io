@@ -1,3 +1,5 @@
+
+```
 ---
 layout: page
 title: Collections
@@ -8,6 +10,7 @@ type: page
 
 * content
 {:toc}
+```
 
 ## 工具
 

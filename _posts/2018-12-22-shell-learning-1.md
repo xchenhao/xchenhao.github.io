@@ -2,7 +2,7 @@
 layout: post
 title:  "Shell 学习 1"
 categories: Linux
-tags: shell
+tags: Shell
 author: xchenhao
 ---
 
@@ -121,4 +121,5 @@ do
 done
 ```
 
-最后编辑于 12/22/2018 00:05 星期六
+### 编辑记录
+创建：12-22-2018 00:05 周六<br />

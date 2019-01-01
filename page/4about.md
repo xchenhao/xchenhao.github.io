@@ -1,3 +1,4 @@
+```
 ---
 layout: page
 title: About
@@ -8,6 +9,7 @@ type: page
 
 * content
 {:toc}
+```
 
 ## 关于我
 

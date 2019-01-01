@@ -7,7 +7,7 @@
 
 # Site settings
 title: 不可思议
-brief-intro: Where Am I
+brief-intro: 学习中的笔记
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://xchenhao.github.io" # the base hostname & protocol for your site
 
@@ -23,7 +23,7 @@ email: chenhao_apple@163.com
 #linkedIn_username: gaohaoyang
 dribbble_username:
 
-description_footer: 本站记录学习旅途中留下的一些脚印
+#description_footer: 记录学习中的笔记
 
 # comments
 # two ways to comment, only choose one, and use your own short name
