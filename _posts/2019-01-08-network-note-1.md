@@ -75,6 +75,34 @@ author: xchenhao
   - 组网
 ![组网](/images/network-note-1-router-switch.jpg)
 
+### TCP 连接过程
+#### 三次握手
+![三次握手](/images/network-note-1-tcp-3-shake-hands.png)
+#### 四次挥手
+![四次挥手](/images/network-note-1-tcp-4-shake-hands.png)
+#### 十种状态
+![十种状态](/images/network-note-tcp-10-states.png)
+#### 2MSL 问题
+![2MSL](/images/network-note-1-tcp-2msl.JPG)
+#### 长链接和短链接
+
+### 常见攻击案例
+#### TCP 半链接攻击(SYN Flood)
+##### 正常时
+![正常时](/images/network-note-1-attack-syn-flood.png)
+##### 攻击时
+![攻击时](/images/network-note-1-attack-syn-flood-2.png)
+#### DNS 攻击
+##### DNS 服务器劫持
+![DNS 服务器劫持](/images/network-note-1-attack-dns-kidnap.png)
+##### DNS 欺骗
+![DNS 欺骗](/images/network-note-1-attack-dns-cheat.png)
+#### ARP 攻击
+![ARP 攻击](/images/network-note-1-attack-arp.jpeg)
+
+### 家庭上网解析
+![家庭上网解析](/images/network-note-1-nat.png)
+
 ### 相关链接
 [Python 笔记 3(网络相关)](/2019/01/08/python-note-3/)
 
@@ -82,3 +110,4 @@ author: xchenhao
 
 创建：01-08-2019 22:00 周二<br />
 编辑：01-09-2019 22:00 周三<br />
+编辑：01-12-2019 18:47 周六<br />
