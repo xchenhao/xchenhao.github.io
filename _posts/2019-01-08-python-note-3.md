@@ -2,7 +2,7 @@
 layout: post
 title:  "Python 笔记 3(网络相关)"
 categories: Python
-tags: Python
+tags: Python Network
 author: xchenhao
 ---
 

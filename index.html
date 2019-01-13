@@ -81,7 +81,7 @@ layout: default
             </div>
 
             <!-- Content -->
-            <div class="side ">
+            <div class="side " style="padding-bottom: 5px;">
                 <div>
                     <i class="fa fa-th-list"></i>
                     分类
@@ -139,7 +139,10 @@ layout: default
                       {% else %}
                         {% assign color = 8 | minus: base %}
                       {% endif %}
-                      <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}" style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }};">{{ tag[0] }}</a>
+                      <a href="{{ root_url }}/{{ site.tag_dir }}#{{ tag[0] }}"
+                           style="font-size: {{ size }}pt; color: #{{ color }}{{ color }}{{ color }}; white-space: nowrap">
+                          {{ tag[0] }}
+                      </a>
                     {% endfor %}
                 </div>
             </div>

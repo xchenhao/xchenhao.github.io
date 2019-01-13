@@ -2,7 +2,7 @@
 layout: post
 title:  "Python 笔记 4(系统编程)"
 categories: Python
-tags: Python
+tags: Python 进程 线程
 author: xchenhao
 ---
 
