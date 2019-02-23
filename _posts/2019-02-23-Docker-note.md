@@ -50,14 +50,13 @@ docker info
 # Linux 下载安装
 sudo wget -qO- https://get.docker.com | sh
 sudo usermod -aG docker imooc # 允许非 root 用户（imooc）运行 docker，默认 docker 只允许 root 用户执行
-
 ```
 
 #### Docker 架构介绍与实战
 ![Docker架构](/images/Docker-Arch.png)
 ![Docker架构2](/images/Docker-Arch-2.png)
 
-```
+```bash
 # 运行
 docker run ubuntu echo hello docker
 docker run -p 8080:80 -d daocloud.io/nginx
@@ -92,7 +91,6 @@ docker rmi 81a03c984999
 
 # 删除 container
 docker rm 17add7bbc58c 32ka49aibyy
-
 ```
 
 #### Dockerfile 介绍
@@ -210,12 +208,11 @@ docker push myname/whalesay
 
 
 
-
 # 拉取镜像
 docker pull docker/whalesay 
 
 # 运行 docker/whalesay
-docker run docker/whalesay cowsay Docker很Cool！
+docker run docker/whalesay cowsay Docker很Cool
 
 docker tag docker/whalesay mengcoder/whalesay
 
@@ -227,8 +224,6 @@ docker login
 # 推送镜像到远程仓库
 docker push mengcoder/whalesay
 ```
-
-
 
 #### docker-compose
 
@@ -287,8 +282,8 @@ EXPOSE 2368
 CMD ["npm", "start", "--production"]
 ```
 
-```
-# ghost/config.js
+```javascript
+// ghost/config.js
 
 var path = require('path'),
     config;
@@ -355,7 +350,7 @@ cd ../
 vim docker-compose.yml
 ```
 
-```
+```yaml
 # docker-compose.yml
 
 version: '2'
