@@ -21,29 +21,41 @@ author: xchenhao
 
 适用：开发、测试、运维
 
-预备知识：
-
-- Linux命令行
-- bash
-
-
 #### 类比
 - 粗糙地理解为轻量级的虚拟机
 
 - 开挂的 chroot （chroot 对应用程序做了文件系统的分离，和 Docker 有相似支持）
 
-确实不是虚拟机
+- 确实不是虚拟机
 ![确实不是虚拟机](/images/Docker-VS-VM.png)
+
+- 思想
+  + 集装箱（弹性伸缩扩展）：双 11 来了，服务器撑不住啦！
+  + 标准化：我本地运行没问题啊！
+    - 运输方式
+    - 存储方式
+    - API 接口
+  + 隔离：系统好卡，哪个哥们又写死循环了
+- 核心词汇
+  + Build：镜像（文件系统：应用程序文件+环境文件）
+  + Ship：仓库 hub.docker.com, c.163.com
+  + Run：容器（本质是一个进程）
+
+#### 历史
+- 2010 dotCloud PAAS
+- 2013 Docker 开源
+- 2014.6 Docker 1.0
+- 2014.7 C 轮 $4000 万
+- 2015.4 D 轮 $9500 万
+- 至今 Docker 1.13
 
 #### 安装
 
-docker.com
-
-配置 Registry mirrors 加速镜像
-
+- docker.com
+- 配置 Registry mirrors 加速镜像
 
 ```bash
-# Mac安装
+# Mac 安装
 open docker*.dmg
 docker info
 
@@ -58,8 +70,14 @@ sudo usermod -aG docker imooc # 允许非 root 用户（imooc）运行 docker，
 
 ```bash
 # 运行
+docker run --help
+
 docker run ubuntu echo hello docker
 docker run -p 8080:80 -d daocloud.io/nginx
+# -P 容器所有端口映射到主机随机的端口
+docker run -P -d daocloud.io/nginx
+
+docker exec -it 17add7bbc58c bash
 
 # 停止运行的容器
 docker stop 17add7bbc58c
@@ -95,7 +113,7 @@ docker rm 17add7bbc58c 32ka49aibyy
 
 #### Dockerfile 介绍
 
-##### 通过编写简单的文件创建 docker 镜像
+##### 第一个 Dockerfile
 
 ```
 # Dockerfile
@@ -107,6 +125,7 @@ FROM alpine:latest
 MAINTAINER xbf
 
 # 运行容器产生的效果
+# 或 CMD ["echo", "hello docker"]
 CMD echo 'hello docker'
 ```
 
@@ -135,6 +154,33 @@ EXPOSE 80
 docker build -t xbf/hello-nginx .
 docker run -d -p 80:80 xbf/hello-nginx
 curl http://localhost
+```
+
+##### 第三个 Dockerfile
+jpress.io
+
+```
+FROM hub.c.163.com/library/tomcat
+MAINTAINER myname myemail@163.com
+COPY jpress.war /usr/local/tomcat/webapps
+```
+
+```bash
+docker build -t jpress:latest .
+docker images
+docker run -d -p 8888:8080 jpress
+docker ps
+
+docker run -d p 3306:3306 -e MYSQL_ROOT_PASSWORD=000000 -e MYSQL_DATABASE=jpress hub.c.163.com/library/mysql:latest
+docker ps
+netstat -an|grep 3306
+```
+
+访问 http://localhost:8888/jpress/
+
+```bash
+# 重启 jpress 容器
+docker restart 8abk38ed
 ```
 
 ##### Dockerfile 语法
@@ -420,8 +466,10 @@ docker-composer up -d
 - 如何编排一个多容器的应用（yaml 文件）
 
 #### 参考
-https://www.imooc.com/learn/867
+https://www.imooc.com/learn/867<br />
+https://www.imooc.com/learn/824
 
 #### 编辑记录
 创建 2019-02-23 23:53:00 周六<br />
+编辑 2019-02-25 23:01:00 周一<br />
 
