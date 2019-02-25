@@ -14,19 +14,26 @@ author: xchenhao
 
 #### 总览
 - Docker 简介
-- 镜像与容器
-- 容器存储
-- Registry
-- 多容器 app
+- 镜像、容器与仓库
+- 持久化容器数据（卷挂载）
+- 编排多容器应用
+- 网络（待补）
 
-适用：开发、测试、运维
+#### 历史
 
-#### 类比
-- 粗糙地理解为轻量级的虚拟机
+- 2010 dotCloud PAAS
+- 2013 Docker 开源
+- 2014.6 Docker 1.0
+- 2014.7 C 轮 $4000 万
+- 2015.4 D 轮 $9500 万
+- 至今 Docker 1.13
 
-- 开挂的 chroot （chroot 对应用程序做了文件系统的分离，和 Docker 有相似支持）
+#### 简介
 
-- 确实不是虚拟机
+- 类比
+  + 粗糙地理解为轻量级的虚拟机
+  + 开挂的 chroot （chroot 对应用程序做了文件系统的分离，和 Docker 有相似支持）
+  + 确实不是虚拟机
 ![确实不是虚拟机](/images/Docker-VS-VM.png)
 
 - 思想
@@ -36,18 +43,13 @@ author: xchenhao
     - 存储方式
     - API 接口
   + 隔离：系统好卡，哪个哥们又写死循环了
+
 - 核心词汇
   + Build：镜像（文件系统：应用程序文件+环境文件）
   + Ship：仓库 hub.docker.com, c.163.com
   + Run：容器（本质是一个进程）
 
-#### 历史
-- 2010 dotCloud PAAS
-- 2013 Docker 开源
-- 2014.6 Docker 1.0
-- 2014.7 C 轮 $4000 万
-- 2015.4 D 轮 $9500 万
-- 至今 Docker 1.13
+- 适用：开发、测试、运维
 
 #### 安装
 
@@ -64,7 +66,7 @@ sudo wget -qO- https://get.docker.com | sh
 sudo usermod -aG docker imooc # 允许非 root 用户（imooc）运行 docker，默认 docker 只允许 root 用户执行
 ```
 
-#### Docker 架构介绍与实战
+#### Docker 常用命令
 ![Docker架构](/images/Docker-Arch.png)
 ![Docker架构2](/images/Docker-Arch-2.png)
 
@@ -157,7 +159,7 @@ curl http://localhost
 ```
 
 ##### 第三个 Dockerfile
-jpress.io
+- jpress.io
 
 ```
 FROM hub.c.163.com/library/tomcat
@@ -176,7 +178,7 @@ docker ps
 netstat -an|grep 3306
 ```
 
-访问 http://localhost:8888/jpress/
+- 访问 http://localhost:8888/jpress/
 
 ```bash
 # 重启 jpress 容器
@@ -202,14 +204,14 @@ docker restart 8abk38ed
 
 ##### 镜像分层
 
-Dockerfile 中的每一行都产生一个新层。
+- Dockerfile 中的每一行都产生一个新层。
+- 每一层都有一个特定的独立的 id
 
-每一层都有一个特定的独立的 id
 ![镜像分层](/images/Docker-Layer.png)
 
 #### Volume
 
-提供独立于容器之外的持久化存储。
+- 提供独立于容器之外的持久化存储。
 
 ```bash
 docker run -d --name nginx -v /usr/share/nginx/html nginx
@@ -228,19 +230,8 @@ docker run -it --volumes-from data_container my-app /bin/bash
 
 #### Registry 镜像仓库
 
-术语：
-
-- host 宿主机
-- image 镜像
-- container 容器
-- registry 仓库
-- daemon 守护程序
-- client 客户端
-
-仓库：
-
 - 官方 dockerhub 仓库。
-- 国内：daocloud 、时速云、aliyun
+- 国内：daocloud 、时速云、aliyun、c.163.com
 
 ```bash
 # 搜索镜像
@@ -251,7 +242,6 @@ docker pull whalesay
 
 # 推送镜像
 docker push myname/whalesay
-
 
 
 # 拉取镜像
@@ -284,7 +274,7 @@ chmod +x ./usr/local/bin/docker-compose
 docker-compose --version
 ```
 
-##### 多容器 app 介绍
+##### 多容器应用介绍
 ![多容器app](/images/docker-compose-app.png)
 
 - 配置文件：docker-compose.yaml
@@ -310,7 +300,7 @@ docker-compose --version
 |logs|观察各个容器的日志|
 |ps|列出服务相关的容器|
 
-##### 多容器 app 部署
+##### 多容器应用编排
 
 ```bash
 mkdir ghost nginx data
@@ -456,14 +446,6 @@ docker-compose rm
 docker-compose build
 docker-composer up -d
 ```
-
-#### 总结
-
-- Docker 介绍
-- 如何制作镜像
-- 如何分享镜像
-- 如何持久化容器数据（卷挂载）
-- 如何编排一个多容器的应用（yaml 文件）
 
 #### 参考
 https://www.imooc.com/learn/867<br />
