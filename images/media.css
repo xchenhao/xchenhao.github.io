@@ -1,0 +1,357 @@
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 12.00px){
+.basehead .rightcontent .navlistbox ul li{
+	padding: 1% 10px;
+}
+.main .section_5 .content .rightcontact .some .box{
+	width: 30%;
+}
+.main .titlemodel{
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 9.92px){
+.basehead	.container{
+		width: 100%;
+	}
+}
+
+
+
+
+@media screen and (max-width: 7.68px){
+	.channelmain .channelcontent .sidebar .list li a{
+		padding-left: 40px;
+	}
+.pc{
+	display: none;
+}
+.wap{
+	display: block;
+}	
+.basehead{
+	border-bottom: none;
+}
+
+.basehead .rightcontent{
+	display: none;
+}
+.basehead {
+	padding: 20px 0px;
+}
+.basehead .logo{
+	float: none;
+	width: 100%;
+	padding: 0px 16%;
+}
+.main .titlemodel{
+	padding-top: 10.4%;
+}
+
+}
+@media screen and (max-width: 6.40px){
+	html{
+		font-size: 58%;
+	}
+.channelmain{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.channelmain .channelcontent .rightcontent .prolist .newslist li{
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+}
+.channelmain .channelcontent .rightcontent .prolist .newslist li .imgbox{
+	float: none;
+	width: 100%;
+	padding-left: 20%;
+	padding-right: 20%;
+	margin-bottom: 10px;
+}
+.channelmain .channelcontent .rightcontent .typename2{
+	font-size: 1.8rem;
+}
+.channelmain .channelcontent .rightcontent .prolist .newslist li .content{
+		float: none;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.channelmain .channelcontent .sidebar{
+	float: none;
+	width: 100%;
+	margin-bottom: 20px;
+		padding-top: 10px;
+}
+.channelmain .channelcontent .rightcontent{
+	float: none;
+	width: 100%;
+
+}
+.channelmain .channelcontent .sidebar .h2tit,.channelmain .channelcontent .rightcontent .typename{
+	line-height: 3rem;
+	font-size: 1.7rem;
+	height: 3rem;
+}
+.channelmain .channelcontent .sidebar .list li a{
+		line-height: 3rem;
+	font-size: 1.5rem;
+	height: 3rem;
+}
+
+.channelmain .channelcontent .rightcontent .prolist .list{
+	padding: 4px;
+}
+.channelmain .channelcontent .rightcontent .prolist .list li{
+	width: 50%;
+}
+
+
+.main .titlemodel{
+padding: 15px 0px;
+height: auto;
+background-image: none
+}
+.main .titlemodel .cn{
+	font-size: 2rem;
+}
+.main .section_1 .desc{
+	padding: 0px 4%;
+}
+.main{
+	padding-top: 20px;
+
+}
+.main .section_2,.main .section_3{
+		padding-left: 4%;
+	padding-right: 4%;
+}
+.main .section_1 .list ul li{
+	display: inline-block;
+	width: 50%;
+	margin-right: 0px;
+	padding: 0px 10px;
+	margin-bottom: 10px;
+}
+.main .section_1 .list ul li a .imgbox img{
+	max-width: 40%;
+}
+.main .section_1 .list ul li a{
+	background-image: none;
+	height: 250px;
+}
+.main .section_1 .list ul li a .h2tit{
+	font-size: 1.4rem;
+}
+.main .section_1 .list ul li a .descr{
+	width: 87%;
+}
+.main .titlemodel.bj2{
+	padding-top: 20px;
+	background-image: none
+}
+.main .section_2 .tab .hd ul li{
+	width: 20%;
+	overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+
+float: left;
+margin: 0px;
+font-size: 1.4rem;
+}
+.main .section_2 .tab .hd{
+	zoom:1;
+	overflow: hidden;
+}
+.main .section_2 .tab .bd .model li{
+	width: 33.33%;
+}
+.main .section_2 .tab .bd .model li .box .zzobo a .title{
+	font-size: 1.3rem;
+}
+.main .section_3 .model{
+	width: 100%;
+margin-right: 0px;
+margin-bottom: 10px;
+}
+.main .section_3 .model .h2tit .s1 img{
+	height: 20px;
+}
+.main .section_4 .left{
+	width:100%;
+	float: none;
+	margin-bottom: 20px;
+}
+.main .section_4 .right{
+width:100%;
+	float: none;
+}
+.main .section_4{
+padding: 15px;
+	background: #f3f3f3;
+}
+.main .section_4 .h2tit{
+	font-size: 2rem;
+}
+.main .section_4 .left .mapcontainer{
+	height: 250px;
+}
+.main .section_4 .right .h2tit{
+	padding-left: 12%;
+}
+.main .section_5 .titlemo .cn{
+	margin-bottom: 10px;
+}
+.main .section_5 .titlemo .cn img{
+width:30%;
+}
+.main .section_5 .desc img{
+	width: 70%;
+}
+.main .section_5 .content .left,.main .section_5 .content .rightcontact{
+	width: 100%;
+	padding: 0px 4%;
+}
+.main .section_5 .content .rightcontact{
+	border-left: none;
+}
+.basefooter{
+	padding: 20px 15px;
+}
+.main .section_5 .content .rightcontact .model img{
+	margin-right: 10px;
+}
+.main .section_5 .content .rightcontact .some .box{
+	width: 50%;
+	margin-right: 0px;
+	padding: 0px 5%;
+}
+.basefooter .listnav ul li{
+	font-size: 1.2rem;
+}
+.main .section_5 .content .left{
+	margin-bottom: 25px;
+}
+
+#dituContent{
+	height: 250px !important
+}
+.main .section_4 .left .mapcontainer{
+	margin-top: 3%;
+}
+.basefooter .desc2 p span{
+	display: block;
+}
+
+
+.main .section_4 .right .list .words .desc{
+text-align: left;
+}
+.main .section_4 .right .list .words img{
+display: inline-block;
+width: auto;
+margin-bottom: 6%;
+
+}
+.main .section_4 .right .list .words{
+	color: #fff;
+		padding-top: 4%;
+		padding-left: 3%;
+		padding-right: 3%;
+		height: 270px;
+		padding-bottom: 3%;
+	text-align: left;
+		font-size: 1.2rem;
+}
+
+.main .section_4 .right .list .model2,.main .section_4 .right .list .model4,.main .section_4 .right .list .model5,.main .section_4 .right .list .model7{
+	display:none;
+}
+
+
+.main .section_4 .right .list .words{
+	width: 50% !important;
+	color: #fff;
+    text-align: right;
+    padding-top: 4%;
+    padding-left: 3%;
+    padding-right: 3%;
+    height: 270px;
+    padding-bottom: 3%;
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+
+.channelmain .channelcontent .rightcontent .newscontent .h2tit{
+	font-size: 1.8rem;
+	line-height: 20px;
+}
+.channelmain .channelcontent .rightcontent .newscontent .contentbox{
+	font-size: 1.4rem;
+}
+.channelmain .channelcontent .rightcontent .newscontent .relative .relist li{
+	float: none;
+	line-height: 30px;
+	width: 100%;
+}
+
+.channelmain .channelcontent .rightcontent .newscontent .relative .relist {
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+
+.channelmain .channelcontent .rightcontent .aboutindex .logo img{
+	width: 80%;
+}
+.channelmain .channelcontent .rightcontent .aboutindex .pic img{
+	width: 60%;
+}
+.channelmain .channelcontent .rightcontent{
+padding-left: 10px;
+padding-right: 10px;
+}
+.channelmain .channelcontent .rightcontent .aboutindex .model .h2tit{
+	font-size: 1.8rem;
+}
+.channelmain .channelcontent .rightcontent .aboutindex .model .desc{
+	font-size: 1.5rem;
+}
+
+.channelmain .channelcontent .rightcontent .aboutindex{
+	padding-top: 16px;
+	padding-bottom: 30px;
+}
+
+.channelmain .channelcontent .rightcontent .aboutindex .conbox{
+	line-height: 2rem;
+	font-size: 1.4rem;
+}
+
+
+
+
+
+
+}
